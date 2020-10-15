@@ -1,0 +1,17 @@
+name: CI-sdk
+
+on: 
+  create:
+    tags:
+      - v*
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+        run:
+            shell: bash
+    steps:
+      - name: Publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
