@@ -1,4 +1,4 @@
-name: CI-sdk
+name: CI-IE
 
 on: 
   create:
@@ -11,6 +11,9 @@ jobs:
         run:
             shell: bash
     steps:
+      - name: Install NPM packages
+        run: npm install
+        
       - name: Publish
         run: npm publish
         env:
