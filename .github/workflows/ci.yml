@@ -11,8 +11,11 @@ jobs:
         run:
             shell: bash
     steps:
-      - name: Install NPM packages
-        run: npm install
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+          registry-url: 'https://npm.pkg.github.com/transformd-ltd'
         
       - name: Publish
         run: npm publish

@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/transformd-ltd"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devbks/is-ie11-dead-yet.git"
