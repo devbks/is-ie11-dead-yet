@@ -1,5 +1,19 @@
 {
   "name": "is-ie11-dead-yet",
   "version": "0.420.69",
-  "main": "index.js"
+  "main": "index.js",
+  "description": "![Hell no](ooof.png)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devbks/is-ie11-dead-yet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devbks/is-ie11-dead-yet/issues"
+  },
+  "homepage": "https://github.com/devbks/is-ie11-dead-yet#readme"
 }
